@@ -4,7 +4,7 @@ const util = require('util');
 const bot = new Discord.Client({
     disableEveryone: true,
     disabledEvents: ['TYPING_START']});
-const prefix = process.env.prefix;
+const prefix = "tako ";
 const ownerID = process.env.ownerID;
 const token = process.env.token;
 
@@ -51,7 +51,7 @@ bot.on('message', async message => {
     }
     
     //Commands, Tako will only respond if preceeded by the prefix
-    if (message.content.toLowerCase().startsWith(prefix) + " ") {
+    if (message.content.toLowerCase().startsWith(prefix)) {
         const args = message.content.slice(prefix.length).split(/ +/);
 	    const command = args.shift().toLowerCase();
 
