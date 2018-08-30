@@ -1,7 +1,7 @@
 {
-  "name": "discord-bot-template",
+  "name": "tako-bot",
   "version": "1.0.0",
-  "description": "A Discord bot template",
+  "description": "A lew discord bot bein' sassy",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,17 +10,13 @@
     "discord",
     "bot"
   ],
-  "author": "Tony (zfbTony)",
-  "license": "MIT",
+  "author": "BrandyBuizel",
+  "license": "none",
   "dependencies": {
     "discord.js": "^11.2.1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zfbTony/Discord-Bot-Template.git"
-  },
-  "bugs": {
-    "url": "https://github.com/zfbTony/Discord-Bot-Template/issues"
-  },
-  "homepage": "https://github.com/zfbTony/Discord-Bot-Template#readme"
+    "url": "git+https://github.com/otakostudio/takobot"
+  }
 }
