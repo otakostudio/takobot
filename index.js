@@ -8,8 +8,11 @@ const bot = new Discord.Client({
 
 // Loading global variables
 const prefix = "tako ";
+const helloResponses =["fight me, you ho", "don't @ me you fucker","oh my how lewd",
+                    "YOU'RE NOT MY DAD","who gave you permission to talk to me",
+                    "ey yo what up","what's poppin?","yes?"]
 const despResponses = ["no", "NO!", ":tako_perish:", "DESPACI-NO", "NO NO NO", "STOP",
-                    "BANNED", "I will end you", "fight me, you ho", "don't @ me you fucker"];
+                    "BANNED", "I will end you"];
 
 bot.on("ready", () => {
     bot.user.setGame('with Tentacles'); //default game
@@ -29,8 +32,13 @@ bot.on('message', async message => {
 
     if (message.content.toLowerCase().startsWith("hi tako")||
     message.content.toLowerCase().startsWith("hey tako")){
-        message.channel.send(`Oh it's ${message.author.toString()}, what a cutie!!`);
-        return;
+        if(message.member.roles() === "Studio Member"){
+            message.channel.send(`Oh it's ${message.author.toString()}, what a cutie!!`);
+            return;
+        }else{
+            var response = helloResponses [Math.floor(Math.random()*helloResponses .length)];
+            message.channel.send(response).then().catch(console.error);
+        }
     }
 
     if (message.content.split(" ") &&
