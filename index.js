@@ -33,13 +33,13 @@ bot.on('message', async message => {
 
     if (message.content.toLowerCase().startsWith("hi tako")||
     message.content.toLowerCase().startsWith("hey tako")){
-        if(message.member.roles() === "Studio Member"){
+        /*if(message.member.roles() === "Studio Member"){
             message.channel.send(`Oh it's ${message.author.toString()}, what a cutie!!`);
             return;
-        }else{
+        }else{*/
             var response = helloResponses [Math.floor(Math.random()*helloResponses .length)];
             message.channel.send(response).then().catch(console.error);
-        }
+        //}
     }
 
     if (message.content.split(" ") &&
