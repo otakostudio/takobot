@@ -41,6 +41,10 @@ bot.on('message', async message => {
             message.channel.send(response).then().catch(console.error);
         //}
     }
+	
+	if (message.content.toLowerCase().startsWith("bend over"){
+		message.reply("haha,you wish");	
+	}
 
     if (message.content.split(" ") &&
     message.content.toLowerCase() === "despacito"||
