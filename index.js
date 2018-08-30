@@ -42,7 +42,7 @@ bot.on('message', async message => {
         //}
     }
 	
-	if (message.content.toLowerCase().startsWith("bend over"){
+	if (message.content.toLowerCase().startsWith("bend over")){
 		message.reply("haha,you wish");	
 	}
 
