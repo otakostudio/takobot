@@ -3,11 +3,12 @@ const Discord = require('discord.js');
 const util = require('util');
 const bot = new Discord.Client({
     disableEveryone: true,
-    disabledEvents: ['TYPING_START']
-});
+    disabledEvents: ['TYPING_START']});
+const prefix = process.env.prefix;
+const ownerID = process.env.ownerID;
+const token = process.env.token;
 
 // Loading global variables
-const prefix = "tako ";
 const helloResponses =["fight me, you ho", "don't @ me you fucker","oh my how lewd",
                     "YOU'RE NOT MY DAD","who gave you permission to talk to me",
                     "ey yo what up","what's poppin?","yes?"]
@@ -50,7 +51,7 @@ bot.on('message', async message => {
     }
     
     //Commands, Tako will only respond if preceeded by the prefix
-    if (message.content.toLowerCase().startsWith(prefix)) {
+    if (message.content.toLowerCase().startsWith(prefix) + " ") {
         const args = message.content.slice(prefix.length).split(/ +/);
 	    const command = args.shift().toLowerCase();
 
