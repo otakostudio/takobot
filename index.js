@@ -90,10 +90,20 @@ bot.on('message', async message => {
         }
 
         else if (command === "self destruct"){
-            message.channel.send("3");
-            message.channel.send("2");
-            message.channel.send("1");
-            message.channel.send("💣");
+            for (i = 0; i < 3; i++) { 
+                if (i = 0){
+                    message.channel.send("3");
+                }
+                if (i = 1){
+                    message.channel.send("2");
+                }
+                if (i = 2){
+                    message.channel.send("1");
+                }
+                if (i = 3){
+                    message.channel.send("💣");
+                }
+            }
         }
 
         else {
