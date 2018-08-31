@@ -77,7 +77,7 @@ bot.on('message', async message => {
         }
 
         else if (command == 'help'){
-            message.channel.send("https://github.com/otakostudio/takobot/blob/master/COMMANDS.md");
+            message.channel.send(`Tako-bot was made in part by @BrandyBuizel#4517\nhttps://github.com/otakostudio/takobot/blob/master/COMMANDS.md`);
         }
 
         else if (command === "asl") 
