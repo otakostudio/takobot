@@ -86,7 +86,7 @@ bot.on('message', async message => {
             let age = args[0];
             let sex = args[1];
             let location = args[2];
-            message.reply(`Hey ${message.author.username}, I see you're a ${age} year old ${sex} from ${location}. Wanna have a good time?`);
+            message.channel.send(`Hey <@` + message.author.id + `>, I see you're a ${age} year old ${sex} from ${location}. Wanna have a good time?`);
         }
 
         else {
