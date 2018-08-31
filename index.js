@@ -7,6 +7,7 @@ const bot = new Discord.Client({
 const prefix = "tako ";
 const ownerID = process.env.ownerID;
 const token = process.env.token;
+var brandyID = "<@166022014031626261>"
 
 // Loading global variables
 const helloResponses =["fight me, you ho", "don't @ me you fucker","oh my how lewd",
@@ -77,7 +78,7 @@ bot.on('message', async message => {
         }
 
         else if (command == 'help'){
-            message.channel.send("Tako-bot was made in part by <@166022014031626261>\nhttps://github.com/otakostudio/takobot/blob/master/COMMANDS.md`);
+            message.channel.send("Tako-bot was made in part by " + brandyID + "\nhttps://github.com/otakostudio/takobot/blob/master/COMMANDS.md");
         }
 
         else if (command === "asl") 
