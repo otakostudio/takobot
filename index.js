@@ -12,7 +12,7 @@ const token = process.env.token;
 const helloResponses =["fight me, you ho", "don't @ me you fucker","oh my how lewd",
                     "YOU'RE NOT MY DAD","who gave you permission to talk to me",
                     "ey yo what up","what's poppin?","yes?"]
-const despResponses = ["no", "NO!", ":tako_perish:", "DESPACI-NO", "NO NO NO", "STOP",
+const despResponses = ["no", "NO!", "", "DESPACI-NO", "NO NO NO", "STOP",
                     "BANNED", "I will end you"];
 
 bot.on("ready", () => {
@@ -81,7 +81,7 @@ bot.on('message', async message => {
             let age = args[0];
             let sex = args[1];
             let location = args[2];
-            message.reply(`Hello ${message.author.username}, I see you're a ${age} year old ${sex} from ${location}. Wanna date?`);
+            message.reply(`Hey ${message.author.username}, I see you're a ${age} year old ${sex} from ${location}. Wanna have a good time?`);
         }
 
         else {
