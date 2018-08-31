@@ -89,6 +89,13 @@ bot.on('message', async message => {
             message.channel.send(`Hey <@` + message.author.id + `>, I see you're a ${age} year old ${sex} from ${location}. Wanna have a good time?`);
         }
 
+        else if (command === "self destruct"){
+            message.channel.send("3");
+            message.channel.send("2");
+            message.channel.send("1");
+            message.channel.send("💣");
+        }
+
         else {
             message.channel.send(`I don't know what command that is.`);
             return;
