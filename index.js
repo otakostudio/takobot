@@ -76,6 +76,10 @@ bot.on('message', async message => {
             message.reply("Current uptime is : " + uptime);
         }
 
+        else if (command == 'help'){
+            message.channel.send("https://github.com/otakostudio/takobot/blob/master/COMMANDS.md");
+        }
+
         else if (command === "asl") 
         {
             let age = args[0];
