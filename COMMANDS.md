@@ -9,3 +9,4 @@ Some command require additional parameters which as shown in tags like `<this>`
 - `ping` pings the host and returns the time in ms
 - `uptime` sends the user current estimated hours, minutes, and seconds online
 - `asl <age> <sex> <location>` tako-chan is pretty horny guys
+- `self-destruct` tako chan starts an explosive countdown
