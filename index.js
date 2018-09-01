@@ -89,18 +89,18 @@ bot.on('message', async message => {
             message.channel.send(`Hey <@` + message.author.id + `>, I see you're a ${age} year old ${sex} from ${location}. Wanna have a good time?`);
         }
 
-        else if (command === "self destruct"){
-            for (i = 0; i < 3; i++) { 
-                if (i = 0){
+        else if (command === "self-destruct"){
+            for (i = 0; i < 45; i++) { 
+                if (i = 5){
                     message.channel.send("3");
                 }
-                if (i = 1){
+                if (i = 15){
                     message.channel.send("2");
                 }
-                if (i = 2){
+                if (i = 25){
                     message.channel.send("1");
                 }
-                if (i = 3){
+                if (i = 35){
                     message.channel.send("💣");
                 }
             }
