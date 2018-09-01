@@ -90,6 +90,7 @@ bot.on('message', async message => {
         }
 
         else if (command === "self-destruct"){
+<<<<<<< HEAD
             for (i = 0; i < 45; i++) { 
                 if (i = 5){
                     message.channel.send("3");
@@ -101,7 +102,23 @@ bot.on('message', async message => {
                     message.channel.send("1");
                 }
                 if (i = 35){
+=======
+            for (i = 0; i < 70; i++) { 
+                if (i = 10){
+                    message.channel.send("3");
+                }
+                if (i = 25){
+                    message.channel.send("2");
+                }
+                if (i = 40){
+                    message.channel.send("1");
+                }
+                if (i = 55){
+>>>>>>> 0262421d1aaff64cedde3cc3adba3578e6baf7fe
                     message.channel.send("💣");
+                }
+                if (i = 70){
+                    message.channel.send("💥");
                 }
             }
         }
