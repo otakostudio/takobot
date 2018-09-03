@@ -13,11 +13,12 @@ var brandyID = "<@166022014031626261>"
 const helloResponses =["fight me, you ho", "don't @ me you fucker","oh my how lewd",
                     "YOU'RE NOT MY DAD","who gave you permission to talk to me",
                     "ey yo what up","what's poppin?","yes?"]
-const despResponses = ["no", "NO!", "", "DESPACI-NO", "NO NO NO", "STOP",
+const despResponses = ["no", "NO!", "DESPACI-NO", "NO NO NO", "STOP",
                     "BANNED", "I will end you"];
+const rateResponses = ["1/10", "100/10", "eww, no"];
 
 bot.on("ready", () => {
-    bot.user.setGame('with Tentacles'); //default game
+    bot.user.setActivity('with Tentacles'); //default game
     console.info("TAKO-CHAN IS ONLINE");
     console.info(`TAKO-CHAN is lewding up ${bot.guilds.size} server(s)!`);});
 
@@ -44,7 +45,7 @@ bot.on('message', async message => {
     }
 	
 	if (message.content.toLowerCase().startsWith("bend over")){
-		message.reply("haha, you wish");	
+		message.reply("haha, you wish");
 	}
 
     if (message.content.split(" ") &&
@@ -107,6 +108,11 @@ bot.on('message', async message => {
                     message.channel.send("💥");
                 }
             }
+        }
+
+        else if (command === "rateme"){
+            var response = rateResponses [Math.floor(Math.random()*rateResponses .length)];
+            message.channel.send(response).then().catch(console.error);
         }
 
         else {
