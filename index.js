@@ -15,7 +15,7 @@ const helloResponses =["fight me, you ho", "don't @ me you fucker","oh my how le
                     "ey yo what up","what's poppin?","yes?"]
 const despResponses = ["no", "NO!", "DESPACI-NO", "NO NO NO", "STOP",
                     "BANNED", "I will end you"];
-const rateResponses = ["1/10", "100/10", "eww, no"];
+const rateResponses = ["1/10", "100/10", "eww, no", "7.8/10, too much water", "would not touch with a 10 ft pole, 1 star", "8/8 would date m8", "but, I poop from there"];
 
 bot.on("ready", () => {
     bot.user.setActivity('with Tentacles'); //default game
