@@ -121,29 +121,41 @@ bot.on('message', async message => {
             message.channel.send(`Hey <@` + message.author.id + `>, I see you're a ${age} year old ${sex} from ${location}. Wanna have a good time?`);
         }
 
-        else if (command === "self-destruct"){
-            for (i = 0; i < 70; i++) { 
-                if (i = 10){
-                    message.channel.send("3");
+        else if (command === "self"){
+            let addon = args[0];
+            if(addon === "destruct"){
+                for (i = 0; i < 70; i++) { 
+                    if (i = 10){
+                        message.channel.send("3");
+                    }
+                    if (i = 25){
+                        message.channel.send("2");
+                    }
+                    if (i = 40){
+                        message.channel.send("1");
+                    }
+                    if (i = 55){
+                        message.channel.send("💣");
+                    }
+                    if (i = 70){
+                        message.channel.send("💥");
+                    }
                 }
-                if (i = 25){
-                    message.channel.send("2");
-                }
-                if (i = 40){
-                    message.channel.send("1");
-                }
-                if (i = 55){
-                    message.channel.send("💣");
-                }
-                if (i = 70){
-                    message.channel.send("💥");
-                }
+            }else{
+                message.channel.send(`I don't know what command that is.`);
+                return;
             }
         }
 
-        else if (command === "rateme"){
-            var response = rateResponses [Math.floor(Math.random()*rateResponses .length)];
-            message.channel.send(response).then().catch(console.error);
+        else if (command === "rate"){
+            let addon = args[0];
+            if(addon === "me"){
+                var response = rateResponses [Math.floor(Math.random()*rateResponses .length)];
+                message.channel.send(response).then().catch(console.error);
+            }else{
+                message.channel.send(`I don't know what command that is.`);
+                return;
+            }
         }
 
         else {
