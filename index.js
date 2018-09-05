@@ -123,7 +123,7 @@ bot.on('message', async message => {
 
         else if (command === "self"){
             let addon = args[0];
-            if(addon === "destruct"){
+            if(addon.toLowerCase() === "destruct"){
                 for (i = 0; i < 70; i++) { 
                     if (i = 10){
                         message.channel.send("3");
@@ -149,7 +149,7 @@ bot.on('message', async message => {
 
         else if (command === "rate"){
             let addon = args[0];
-            if(addon === "me"){
+            if(addon.toLowerCase() === "me"){
                 var response = rateResponses [Math.floor(Math.random()*rateResponses .length)];
                 message.channel.send(response).then().catch(console.error);
             }else{
