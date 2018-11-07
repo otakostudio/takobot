@@ -150,8 +150,9 @@ bot.on('message', async message => {
         else if (command === "rate"){
             let addon = args[0];
             if(addon.toLowerCase() === "me"){
-                var response = rateResponses [Math.floor(Math.random()*rateResponses .length)];
-                message.channel.send(response).then().catch(console.error);
+                var g1 = Math.floor(Math.random()* rateResponses.length);
+                var g2 = Math.floor(Math.random()* rateResponses[g1].length);
+                message.channel.send(rateResponses[g1][g2]).then().catch(console.error);
             }else{
                 message.channel.send(`I don't know what command that is.`);
                 return;
